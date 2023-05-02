@@ -6,32 +6,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>포트폴리오</title>
 
-    <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/js/main.js">
-
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
-  <!-- 아이콘 태그 -->
+ <!-- 아이콘 태그 -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet"> 
   <!-- Bootstarp JS -->
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
-
-
-  <script>
-    // 코드중복을 피하기 위해 탑헤더/헤더/푸터를 만들어
-    // 재사용한다. jquery load함수
-    $(document).ready(function(){
-      $('#main').load("/main.html");
-    });
-  </script>
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.js" ></script>
+  <!-- css/js -->
+  <link rel="stylesheet" href="./css/main.css">
+  <script type="text/javascript" src="./js/main.js"></script>
 </head>
+
 <body>
-    <div id="main"></div>
+  <div class="main">
+    <div class="container-fluid row whole fadeOut">
+        <div class="col-4 container1" >
+            <div class="box1 fadeOut">
+                <span>SEARCH DEVELOPER 01 </span> 
+                <img src="/img/close.png" id="closeBtn"> 
+            </div>
+            <div class="box2 fadeOut">
+                <img src="./img/ian.jpg" id="myphoto">
+            </div>
+              <div class="box2-1 fadeOut">
+                <span class="blink">Skills ACCESS</span>
+              </div>
+            <div class="box3 fadeOut">
+                <div>  <img class="skill_icon" src="./img/icon/bootstrap.png" alt="">
+                    <img class="skill_icon" src="./img/icon/java-script.png" alt="">
+                    <img class="skill_icon" src="./img/icon/java.png" alt="">
+                    <img class="skill_icon" src="./img/icon/mysql.png" alt="">
+                    <img class="skill_icon" src="./img/icon/oracle.png" alt="">
+                    <img class="skill_icon" src="./img/icon/html.png" alt="">
+                    <img class="skill_icon" src="./img/icon/css.png" alt="">
+                </div>
+            </div>
+
+          </div> 
+        
+            <div class="col-8 container2">
+
+            <div class="box4 fadeOut">
+                <span>DETAILS </span>
+            </div>
+
+            <div class="box5 fadeOut">
+                <div> <button class="Dropdown-Btn"><i class="fa fa-caret-right"></i> About</button>
+                      <button class="btn about"> <i class="fa fa-caret-down"></i>About Me</button>
+                </div>
+                <div> 
+                    <button class="Dropdown-Btn"> <i class="fa fa-caret-right"></i>Front-end</button> 
+                        <button class="btn board1"> <i class="fa fa-caret-down"></i>Company Project</button>
+              </div>
+              <div> 
+                <button class="Dropdown-Btn"> <i class="fa fa-caret-right"></i>Back-end</button> 
+                    <button class="btn board2"> <i class="fa fa-caret-down"></i>Team Project</button>
+            </div>
+            <div> 
+                <button class="Dropdown-Btn"> <i class="fa fa-caret-right"></i>Toy Project</button> 
+                     <button class="btn board3"> <i class="fa fa-caret-down"></i>Board Project</button>
+            </div>
+            
+            </div>
+            <div class="box6 fadeOut">
+                <div class="mini-div">
+                    <div class="item"></div>
+                </div>
+                <div class="mini-div">
+                    <div class="item"></div>
+                </div>
+                <div class="mini-div">
+                    <div class="item"></div>
+                </div>
+            </div>
+            </div>  
+    </div>
+</div>
 </body>
 </html>

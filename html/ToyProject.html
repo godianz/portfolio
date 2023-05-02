@@ -1,0 +1,84 @@
+    <!-- css/js -->
+    <link rel="stylesheet" href="../css/projectCommon.css">
+    <script type="text/javascript" defer src="../js/projectCommon.js"></script>
+
+<body>
+  <div class="header">
+        <button class="closeBtn" onclick="history.back();">colse</button>
+      </div>
+    <div class="container-outer">
+        <div class="container-inner">
+
+          <div class="box1">
+            <span>Images</span> 
+        </div>
+
+            <div class="photoBox">
+        <div class="myPhoto">
+          <img src="../img/board/main.PNG" class="Images">
+        </div>
+      
+        <div class="myPhoto">
+          <img src="../img/board/diary.PNG" class="Images">
+        </div>
+      
+        <div class="myPhoto">
+          <img src="../img/board/photo.PNG" class="Images">
+        </div>
+          
+        <div class="myPhoto">
+          <img src="../img/board/visitor.PNG" class="Images">
+        </div>
+      
+        <div class="myPhoto">
+          <img src="../img/board/diaryRegister.PNG" class="Images">
+        </div>
+          
+        <div class="myPhoto">
+          <img src="../img/board/photoRevise.PNG" class="Images">
+        </div>
+    </div>
+        <a class="prev" onclick="slides(-1)">❮</a>
+        <a class="next" onclick="slides(1)">❯</a>
+      
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+      
+        <div class="row">
+          <div class="column">
+            <img class="preView cursor" src="../img/board/main.PNG" style="width:100%" onclick="nextPhoto(1)" alt="메인화면">
+          </div>
+          <div class="column">
+            <img class="preView cursor" src="../img/board/diary.PNG" style="width:100%" onclick="nextPhoto(2)" alt="게시판">
+          </div>
+          <div class="column">
+            <img class="preView cursor" src="../img/board/photo.PNG" style="width:100%" onclick="nextPhoto(3)" alt="사진첩">
+          </div>
+          <div class="column">
+            <img class="preView cursor" src="../img/board/visitor.PNG" style="width:100%" onclick="nextPhoto(4)" alt="방명록">
+          </div>
+          <div class="column">
+            <img class="preView cursor" src="../img/board/diaryRegister.PNG" style="width:100%" onclick="nextPhoto(5)" alt="게시판등록">
+          </div>    
+          <div class="column">
+            <img class="preView cursor" src="../img/board/photoRevise.PNG" style="width:100%" onclick="nextPhoto(6)" alt="사진첩수정">
+          </div>
+        </div>
+
+        <div class="box1">
+          <span>Details</span> 
+      </div>
+    
+        <div class="writing">
+            <p> 이번 프로젝트에서는 개인 게사판 사이트를 구현했습니다.<br>
+                제작기간은 3주였으며, 도구툴은 STS4.15.1, MySQL Workbench 8.0 CE, Visual Studio Code,
+                언어는JAVA JDK 11, 2.3 톰켓 버전은 9.0.x , Html5, Css3, Javascript, J-query이며, DB는 MySQL을 사용하였습니다.<br>
+                각 게시판들을 Ajax를 사용하여 제작했습니다. <br>
+                
+            </p>
+            
+        </div>
+        </div>
+</div>
+</body>

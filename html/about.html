@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/about.css">
+
+</head>
+<body>
+    <div class="header">
+        <button class="closeBtn" onclick="history.back();">colse</button>
+      </div>
+
+    <div class="container-outer">
+        <div class="container-inner">
+   <div class="box1">About Me</div>
+   <div class="title"></div>
+   <div>
+    차근차근 꾸준히 
+    최적의 솔루션을 제공하는 통찰력과 창의력을 가진 개발자가 되겠습니다.
+   </div>
+</div>
+</div>
+<script>
+let content = "안녕하세요 풀스택을 꿈꾸는 개발자 최이안입니다.";
+let typing = document.querySelector(".title");
+let i = 0;
+
+function typingText(){
+  if(i < content.length) {
+    let txt = content.charAt(i);
+    typing.innerHTML += txt == "\n" ? "<br/>" : txt;
+    i++;
+  }
+}
+setInterval(typingText,70);
+</script>
+</body>
+</html>

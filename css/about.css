@@ -1,0 +1,53 @@
+body {
+    background: url(/img/bg1.jpg) no-repeat center;
+    background-size: cover;
+    color:white;
+}   
+.header{
+    display: flex;
+    justify-content: flex-end;
+}  
+.closeBtn {
+    background-color: rgb(83, 255, 138);
+    color: black;
+    width: 100px;
+    height: 30px;
+    font-weight: bold;
+    font-size: 17px;
+    font-style: italic;
+    padding: 5px;
+    margin:20px;
+    cursor: pointer;
+}
+
+.container-outer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container-inner {
+    border: 1px solid rgb(83, 255, 138);
+    padding:20px;
+    width:1000px;
+    height: 750px;
+    margin-top:50px;
+  }
+
+  .box1 {
+    background-color:rgb(83, 255, 138);
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .box1 span {
+    font-weight: bold;
+    font-size: 22px;
+    font-style: italic;
+  }
+
+  .title {
+    padding:10px;
+    font-size: 22px;
+  }

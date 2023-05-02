@@ -1,7 +1,7 @@
-body {
+ body {
     background: url(/img/bg1.jpg) no-repeat center;
     background-size: cover;
-}
+} 
 
 .whole{
 	width: 1000px;
@@ -45,17 +45,20 @@ body {
 .box2{
     width: 100%;
     margin-top: 10px;
-    height: 580px;
-    border: 1px solid rgb(83, 255, 138);
+    height: 380px;
 }
 
-.box3 {
+#myphoto {
+    width: 293px;
+}
+
+.box2-1 {
    width: 100%;
    background-color: rgb(83, 255, 138);
-    padding: 5px;
+   padding: 5px;
 } 
 
-.box3 span {
+.box2-1 span {
     font-weight: bold;
     font-size: 22px;
     font-style: italic;
@@ -68,6 +71,18 @@ body {
         0% { color:#00a0e9;}
         100% {color:#000; }
         }
+
+.box3 {
+    width: 100%;
+    margin: 5px;
+    height: 180px;
+    padding: 5px;
+}
+
+.skill_icon {
+    width: 65px;
+    padding:5px;
+}
 
 .container2 {
     display: flex;
@@ -149,4 +164,33 @@ body {
 
 .fadeOut {
     opacity: 0;
+}
+
+
+
+/* button click */
+
+.animate_content {
+    animation: animate 3s ease;
+}
+
+@keyframes animate {
+
+	10% 
+		 {transform: scale(1, 0.002);}
+	35%
+		{transform: scale(0.2, 0.002)
+		opacity 1;}
+	50%
+		{transform: scale(0.2, 0.002)
+		opacity 0;}
+	85%
+		{transform: scale(1, 0.002)
+		opacity 1;}
+	100%
+		{transform: scale(1, 1);}
+}
+
+.fadeIn {
+    z-index: 10;
 }

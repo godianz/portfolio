@@ -1,5 +1,6 @@
-$(document).ready ( function (){
+$(document).ready(function (){
     var Time=300;
+
     $(".whole").animate({
             opacity:'1'
     }, Time, function(){
@@ -9,25 +10,28 @@ $(document).ready ( function (){
             $(".box2").animate({
                 opacity:'1'
             }, Time, function (){
-                $(".box3").animate({
+                $(".box2-1").animate({
                     opacity:'1'
                 }, Time, function (){
-                    $(".box4").animate({
+                    $(".box3").animate({
                         opacity:'1'
                     }, Time, function (){
-                        $(".box5").animate({
+                        $(".box4").animate({
                             opacity:'1'
                         }, Time, function(){
-                            $(".box6").animate({
+                            $(".box5").animate({
                                 opacity:'1'
-                            },Time)
+                            },Time, function(){
+                                $(".box6").animate({
+                                    opacity:'1'
+                                }, Time)
+                            });
                         });
                     });
                 });
             });
         });
     });
-});
 
 var Dropdown = document.getElementsByClassName("Dropdown-Btn");
 var i;
@@ -44,14 +48,23 @@ for(i=0; i<Dropdown.length; i++) {
     });
 }
 
+$(".about").click(function(){
+    location.href="../html/about.html"
+})
+
 $(".board1").click(function(){
-    location.href="/companyProject.html"
+    location.href="../html/companyProject.html"
 })
 
 $(".board2").click(function(){
-    location.href="/TeamProject.html"
+    location.href="../html/TeamProject.html"
 })
 
 $(".board3").click(function(){
-    location.href="/ToyProject.html"
+    location.href="../html/ToyProject.html"
 })
+
+});
+
+
+
