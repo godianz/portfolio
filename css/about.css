@@ -5,7 +5,7 @@
   font-style: normal;
 }
 body {
-    background: url(/img/bg1.jpg) no-repeat center;
+    background: url(../img/bg1.jpg) no-repeat center;
     background-size: cover;
     font-family: 'Ycomputer-Regular';
 }   
