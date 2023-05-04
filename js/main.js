@@ -44,21 +44,6 @@ for(i=0; i<Dropdown.length; i++) {
     });
 }
 
-
-$(".board1").click(function(){
-    location.href="../board/companyProject.html"
-})
-
-$(".board2").click(function(){
-    location.href="../board/TeamProject.html"
-})
-
-$(".board3").click(function(){
-    location.href="../board/ToyProject.html"
-})
-
-
-
 });
 
 
