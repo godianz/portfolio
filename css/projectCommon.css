@@ -82,7 +82,10 @@ body {
   }
   
   .preView {
-    opacity: 0.6
+    opacity: 0.6;
+    width: 143px;
+    height: 100px;
+    object-fit: fill;
   }
   
   .active,
