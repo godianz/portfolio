@@ -46,15 +46,15 @@ for(i=0; i<Dropdown.length; i++) {
 
 
 $(".board1").click(function(){
-    location.href="../html/companyProject.html"
+    location.href="../board/companyProject.html"
 })
 
 $(".board2").click(function(){
-    location.href="../html/TeamProject.html"
+    location.href="../board/TeamProject.html"
 })
 
 $(".board3").click(function(){
-    location.href="../html/ToyProject.html"
+    location.href="../board/ToyProject.html"
 })
 
 
