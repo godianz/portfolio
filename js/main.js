@@ -21,11 +21,7 @@ $(document).ready(function (){
                         }, Time, function(){
                             $(".box5").animate({
                                 opacity:'1'
-                            },Time, function(){
-                                $(".box6").animate({
-                                    opacity:'1'
-                                }, Time)
-                            });
+                            },Time);
                         });
                     });
                 });
@@ -64,7 +60,8 @@ $(".board3").click(function(){
     location.href="../html/ToyProject.html"
 })
 
-});
 
+
+});
 
 
