@@ -44,9 +44,6 @@ for(i=0; i<Dropdown.length; i++) {
     });
 }
 
- $(".about").click(function(){
-     location.href="../html/about.html"
- })
 
 $(".board1").click(function(){
     location.href="../html/companyProject.html"
