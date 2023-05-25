@@ -20,13 +20,12 @@ body {
 } 
 
 .whole{
-	width: 1000px;
+    width: 60%;
 	height: 750px;
-	margin: auto;
     display: flex;
-    flex-flow: row wrap;
     align-items: center;
     justify-content: center;
+    margin:auto;
     margin-top: 100px;
     margin-bottom: 50px;
     border: 1px solid rgb(83, 255, 138);
@@ -40,7 +39,7 @@ body {
 }
 
 .box1 {
-    width: 100%;
+    width: 90%;
     margin:10px;
     background-color:rgb(83, 255, 138);
     padding: 5px; 
@@ -62,18 +61,20 @@ body {
 }
 
 .box2{
-    width: 100%;
+    width: 90%;
     margin-top: 10px;
     height: 380px;
     flex: 1 100% 0;
 }
 
 #myphoto {
-    width: 293px;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
 }
 
 .box2-1 {
-   width: 100%;
+   width: 90%;
    background-color: rgb(83, 255, 138);
    padding: 5px;
    flex: 1 100% 0;
@@ -94,7 +95,7 @@ body {
         }
 
 .box3 {
-    width: 100%;
+    width: 90%;
     margin: 5px;
     height: 180px;
     padding: 5px;
@@ -185,7 +186,47 @@ a:hover {
     @media screen and ( max-width: 767px ) 
                   and ( orientation: portrait )
 {
-    
+    .whole {
+        height: auto;
+        width: auto;
+        margin:10px;
+        flex-direction: column;
+        padding:0;
+    }
+    .col-4, .col-8 {
+        max-width: none;
+    }
+    .box1 {
+        margin-top: 20px;
+        width: 70%;
+        order: 0;
+      }
+      .box2 {
+        width: 70%;
+        flex: 1 20%;
+        order: 1;
+      }
+      .box2-1 {
+        width: 70%;
+        flex: 1 20%;
+        order: 2;
+      }
+      .box3 {
+        width: 70%;
+        order:3;
+      }
+      .box4 {
+        width: 70%;
+        flex: 1 100%;
+        order: 4;
+      }
+      .box5 {
+        width: 70%;
+        order: 5;
+        flex: 1 100%;
+        margin-bottom: 30px;
+      }
+
 }
 
     /* 모바일 가로모드일대 */
