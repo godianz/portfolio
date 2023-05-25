@@ -4,9 +4,18 @@
     font-weight: normal;
     font-style: normal;
 }
+
+*{
+    margin:0;
+    padding:0;
+}
+
 body {
     font-family: 'Ycomputer-Regular';
-    background: url(../img/bg1.jpg) no-repeat center;
+    background: url(../img/bg1.jpg) no-repeat  center center fixed;
+    background-size: cover;
+    min-height: 100%;
+    background-position: center;
     background-size: cover;
 } 
 
@@ -15,9 +24,11 @@ body {
 	height: 750px;
 	margin: auto;
     display: flex;
+    flex-flow: row wrap;
     align-items: center;
     justify-content: center;
     margin-top: 100px;
+    margin-bottom: 50px;
     border: 1px solid rgb(83, 255, 138);
 }
 
@@ -33,6 +44,7 @@ body {
     margin:10px;
     background-color:rgb(83, 255, 138);
     padding: 5px; 
+    flex: 1 100% 0;
 }
 
 .box1 span {
@@ -53,6 +65,7 @@ body {
     width: 100%;
     margin-top: 10px;
     height: 380px;
+    flex: 1 100% 0;
 }
 
 #myphoto {
@@ -63,6 +76,7 @@ body {
    width: 100%;
    background-color: rgb(83, 255, 138);
    padding: 5px;
+   flex: 1 100% 0;
 } 
 
 .box2-1 span {
@@ -85,6 +99,7 @@ body {
     height: 180px;
     padding: 5px;
     margin-top:10px;
+    flex: 1 100% 0;
 }
 
 .skill_icon {
@@ -104,6 +119,7 @@ body {
     margin:10px;
     background-color:rgb(83, 255, 138);
     padding: 5px;
+    flex: 1 100% 0;
 }
 
 .box4 span {
@@ -112,11 +128,12 @@ body {
     font-style: italic;
 }
 
-.box5 {
+.box5 {    
     border:1px solid white;
     width:100%;
     height: 605px;
     margin:10px;
+    flex:1 100% 0;
 }
 
 .Dropdown-Btn {
@@ -150,14 +167,6 @@ body {
     background-color: rgb(39, 82, 56);
 }
 
-.mini-div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 70px;
-    border: 1px solid white;
-}
-
 .fadeOut {
     opacity: 0;
 }
@@ -171,3 +180,33 @@ a:hover {
     text-decoration: none;
     color: #262727;
 }
+
+    /* 모바일 해상도 */
+    @media screen and ( max-width: 767px ) 
+                  and ( orientation: portrait )
+{
+    
+}
+
+    /* 모바일 가로모드일대 */
+    @media screen and ( max-width: 767px ) 
+                  and ( orientation: landscape )
+
+                  {
+
+    }
+
+    /* 태블릿 해상도 */
+    @media screen and (min-width: 768px)
+                  and (max-width: 959px)
+        {
+            
+        }
+
+    /* pc해상도  */
+    @media screen and (min-width: 960px)
+       {
+
+       }
+
+    
