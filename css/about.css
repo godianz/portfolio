@@ -75,59 +75,41 @@ body {
 
    /* 모바일 해상도 */
    @media screen and ( max-width: 767px ) 
-   and ( orientation: portrait )
-{
+                 and ( orientation: portrait ) {
 .header {
   width: 100%;
-
 }
-
-.container-outer {
-width: 100%;
-
+.container-inner {
+  width: auto;
+}
+.write {
+  width: 100%;
 }
 
 }
 
 /* 태블릿 해상도 */
 @media screen and (min-width: 768px)
-   and (max-width: 959px)
-{
-.whole {
- height: auto;
- width: auto;
- margin:20px;
-}
-.box1 {
+              and (max-width: 959px) {
+  .header {
+    width: 100%;
+  }
+  .container-inner {
+    width: auto;
+  }
+.write {
  width: 100%;
 }
-#myphoto {
- width: 100%;
- height: auto;
-
-}.box2 {
- width: 100%;
- flex: 1;
 
 }
-.box2-1 {
- width: 100%;
- flex: 1;
 
-}
-.box3 {
- width: 100%;
- flex: 1;
-}
-.box4 {
- width: 100%;
- flex: 1;
-
-}
-.box5 {
- width: 100%;
- height: auto;
- flex:1;
-}
-
+@media screen and (min-width:960px) {
+  
+  .header {
+    width: 100%;
+  }
+  .write {
+    width: 100%;
+   }
+  
 }
