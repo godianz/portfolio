@@ -5,10 +5,13 @@
   font-style: normal;
 }
 body {
-    background: url(../img/bg1.jpg) no-repeat center;
-    background-size: cover;
-    font-family: 'Ycomputer-Regular';
-}   
+  font-family: 'Ycomputer-Regular';
+  background: url(../img/bg1.jpg) no-repeat  center center fixed;
+  background-size: cover;
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+} 
 .header{
     display: flex;
     justify-content: flex-end;
@@ -68,4 +71,63 @@ body {
   }
 .pha1{
   font-size: 25px;
+}
+
+   /* 모바일 해상도 */
+   @media screen and ( max-width: 767px ) 
+   and ( orientation: portrait )
+{
+.header {
+  width: 100%;
+
+}
+
+.container-outer {
+width: 100%;
+
+}
+
+}
+
+/* 태블릿 해상도 */
+@media screen and (min-width: 768px)
+   and (max-width: 959px)
+{
+.whole {
+ height: auto;
+ width: auto;
+ margin:20px;
+}
+.box1 {
+ width: 100%;
+}
+#myphoto {
+ width: 100%;
+ height: auto;
+
+}.box2 {
+ width: 100%;
+ flex: 1;
+
+}
+.box2-1 {
+ width: 100%;
+ flex: 1;
+
+}
+.box3 {
+ width: 100%;
+ flex: 1;
+}
+.box4 {
+ width: 100%;
+ flex: 1;
+
+}
+.box5 {
+ width: 100%;
+ height: auto;
+ flex:1;
+}
+
 }
