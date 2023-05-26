@@ -115,7 +115,10 @@ body {
     font-size: 22px;
     font-style: italic;
   }
-  
+    .header{
+    display: flex;
+    justify-content: flex-end;
+  }
   .closeBtn {
     background-color: rgb(83, 255, 138);
     color: black;
@@ -127,11 +130,6 @@ body {
     padding: 5px;
     margin:20px;
     cursor: pointer;
-  }
-  
-  .header{
-    display: flex;
-    justify-content: flex-end;
   }
 
   .link {
@@ -148,4 +146,70 @@ li {
   padding: 10px;
 }
 
- 
+    /* 모바일 해상도 */
+    @media screen and ( max-width: 767px ) 
+                  and ( orientation: portrait )
+{
+
+  .container-outer {
+    width: auto;
+    margin:10px 20px;
+  }
+  .container-inner {
+      width:100%;
+  }
+  .photoBox {
+      width: 100%;
+  }
+  .myPhoto {
+      width: auto;
+      height: auto;
+  }
+  .row {
+    width: 100%;
+  }
+
+  .column {
+    width: 100%;
+  }
+
+  .writing {
+    width: 100%;
+  }
+
+
+}
+
+    /* 태블릿 해상도 */
+    @media screen and (min-width: 768px)
+                  and (max-width: 959px)
+        {
+          .container-outer {
+            width: auto;
+            margin:10px 20px;
+          }
+          .container-inner {
+              width:100%;
+          }
+          .photoBox {
+              width: 100%;
+          }
+          .myPhoto {
+              width: auto;
+              height: auto;
+          }
+          .row {
+            width: 100%;
+          }
+        
+          .column {
+            width: 100%;
+          }
+        
+          .writing {
+            width: 100%;
+          } 
+        }
+
+
+    
