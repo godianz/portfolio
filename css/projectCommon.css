@@ -147,11 +147,8 @@ li {
 }
 
     /* 모바일 해상도 */
-
-    @media screen and ( max-width: 767px ) 
-                  and ( min-width:320px )
-                  and ( orientation: portrait )
-{
+    @media screen and ( min-width: 320px )                   
+                  and ( orientation: portrait ) {
 
   .container-outer {
     width: auto;
@@ -176,6 +173,10 @@ li {
   }
 
   .writing {
+    width: 100%;
+  }
+
+  .link {
     width: 100%;
   }
 
