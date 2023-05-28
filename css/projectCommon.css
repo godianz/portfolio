@@ -179,7 +179,10 @@ li {
   .link {
     width: 100%;
   }
-
+  .prev,
+  .next {
+    top:350px;
+  }
 
 }
 
